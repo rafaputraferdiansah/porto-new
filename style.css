@@ -1,0 +1,64 @@
+:root {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --primary-dark: #0f172a; /* Blue dongker (slate-900) */
+  --primary-darker: #000000; /* Hitam */
+  --accent-yellow: #facc15; /* Kuning terang */
+  --text-light: #f8fafc; /* Text terang */
+  --card-bg: #1e293b; /* Card background (slate-800) */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+  font-family: var(--font-sans);
+}
+
+/* Ensure the year in footer updates automatically */
+#year {
+  /* will be filled by script.js */
+}
+
+/* Simple fade‑in animation for sections on scroll */
+[data-animate] {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity .6s ease-out, transform .6s ease-out;
+}
+[data-animate.visible] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth page transition animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Accent color for links and highlights */
+a, button {
+  transition: all 0.3s ease;
+}
+
+a:hover, button:hover {
+  color: var(--accent-yellow);
+}
+
+/* Smooth scroll link effects */
+html {
+  scroll-padding-top: 64px;
+}
