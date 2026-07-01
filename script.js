@@ -34,7 +34,7 @@ navLinks.forEach(link => {
 
 // Contact form -> Google Sheets via Google Apps Script Web App
 // GANTI URL di bawah ini dengan Web App URL hasil deploy Apps Script kamu
-const FORM_ENDPOINT = 'https://script.google.com/macros/s/GANTI_DENGAN_ID_DEPLOYMENT_KAMU/exec';
+const FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbypCU4YbDLnqCZ8pHoWxJC8M_CMWDRREBe37-t5AiblhxfvWF1AvxbPkj_diP9OIUrN/exec';
 
 const form = document.getElementById('contactForm');
 const submitBtn = form.querySelector('button[type="submit"]');
